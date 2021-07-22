@@ -1,5 +1,11 @@
-import logo from './logo.svg';
+import React from 'React';
+import Header from './components/Header'
+import Navigation from './components/Navigation'
+import Project from './components/Project'
+import Footer from './components/Footer'
+import 'bulma/css/bulma.min.css'
 import './App.css';
+
 
 function App() {
   return (
