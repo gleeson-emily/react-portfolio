@@ -7,7 +7,7 @@ import React from 'react';
 //code for navbar from my first portfolio switched to JSX syntax
 
 export default function Header() {
-return ( <header>
+return ( <header className="header">
   <h1>Emily Gleeson - Web Developer Portfolio</h1>
   <h2>Aspiring Web Developer</h2>
   <nav>

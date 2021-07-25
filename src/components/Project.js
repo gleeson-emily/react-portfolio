@@ -4,23 +4,29 @@ import projects from '../utils/projects.js';
 
 //component with my project - will be called multiple times
 //refer to react activity 5 for a possible way to do this (separate .js file with projects array)
+//context?? - change ids to a function
+console.log(projects)
 
-export default function Project(props) {
-  const { projectTitle, projectDescription, projectTech, picture, pictureAltText, githubLink } = projects
+export default function Project({ projects }) {
+ //const { projectTitle, projectDescription, projectTech, picture, pictureAltText, githubLink } = projects
+  console.log({projects})
+  console.log(projects[0].githubLink)
     return (
-        <div className="projectContainer">
-<a href={githubLink} target="_blank">
-  <img
-    className="margins"
-    src={picture}
-    alt={pictureAltText}
-  />
-</a>
-<h4>{projectTitle}</h4>
-<h5>{projectTech}</h5>
-<p>
-  {projectDescription}
-</p>
-</div>
-    )
-}
+      projects.map((project) => (
+          <div className="projectContainer" key={project.id}>
+          <a href={project.githubLink} target="_blank">
+        <img
+        className="margins"
+        src={project.picture}
+        alt={project.pictureAltText}
+        />
+    </a>
+    <h4>{`${project.projectTitle}`}</h4>
+    <h5>{`${project.projectTech}`}</h5>
+    <p>
+    {`${project.projectDescription}`}
+    </p>
+    </div>
+      ))
+      );
+    }
