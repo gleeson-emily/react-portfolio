@@ -5,7 +5,7 @@ const projects = [
         projectTech: 'HTML, CSS, JavaScript, Handlebars, and MySQL',
         projectDescription: `A travel budgeting app that allows users to save and update trip budget data. Users can also leave comments on individual city pages, 
             which can be used for providing travel tips. A group project - my contribution included building the SQL database and troubleshooting JavaScript issues.`,
-        picture: '../images/add-trip.png',
+        picture: './images/add-trip.png',
         pictureAltText: 'Plan Your Trip Budget App',
         githubLink: 'https://github.com/darylnauman/cold-travel-planner'
     },
