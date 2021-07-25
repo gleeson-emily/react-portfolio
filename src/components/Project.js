@@ -1,14 +1,12 @@
 import React from 'react';
 import projects from '../utils/projects.js';
-//import 'bulma/css/bulma.min.css'
 
-//component with my project - will be called multiple times
-//refer to react activity 5 for a possible way to do this (separate .js file with projects array)
-//context?? - change ids to a function
+
+
 console.log(projects)
 
 export default function Project({ projects }) {
- //const { projectTitle, projectDescription, projectTech, picture, pictureAltText, githubLink } = projects
+
   console.log({projects})
   console.log(projects[0].githubLink)
     return (

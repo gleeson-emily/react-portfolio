@@ -3,7 +3,7 @@ import projects from '../utils/projects'
 import Project from './Project'
 
 //component with body of my portfolio site
-
+//this will conditionally render everything based on which tab is clicked
 
 
 

@@ -5,6 +5,7 @@ import React from 'react';
 
 
 //code for navbar from my first portfolio switched to JSX syntax
+//may need to move/refactor navbar stuff to Navigation
 
 export default function Header() {
 return ( <header className="header">
