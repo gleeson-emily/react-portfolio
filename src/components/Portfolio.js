@@ -8,7 +8,7 @@ export default function Portfolio() {
 return (
         <div class="column is-four-fifths">
             {projects.map((project)=> (
-                 <Project key={project.id} picture={project.picture} pictureAltText={project.pictureAltText} projectTitle={project.projectTitle} projectDescription={project.projectDescription} githubLink={project.github} deployedLink={project.deployedLink}/>
+                 <Project key={project.id} picture={project.picture} pictureAltText={project.pictureAltText} projectTitle={project.projectTitle} projectTech={project.projectTech} projectDescription={project.projectDescription} githubLink={project.github} deployedLink={project.deployedLink}/>
                  ))}
         </div>
     )
