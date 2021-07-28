@@ -1,0 +1,55 @@
+import images from '../project-images/project-images.js'
+
+const projects = [ 
+    {
+        id: 1,
+        projectTitle: "Plan Your Trip - Travel Budgeting App",
+        projectTech: "HTML, CSS, JavaScript, Handlebars, and MySQL",
+        projectDescription: "A travel budgeting app that allows users to save and update trip budget data. Users can also leave comments on individual city pages, which can be used for providing travel tips. A group project - my contribution included building the SQL database and troubleshooting JavaScript issues.",
+        picture: images.planTrip,
+        pictureAltText: "Plan Your Trip Budget App",
+        githubLink: "https://github.com/darylnauman/cold-travel-planner",
+        deployedLink: "https://intense-savannah-61016.herokuapp.com/"
+    },
+    {   
+        id: 2,
+        projectTitle: "Employee Tracker App",
+        projectTech: "Node.js and MySQL",
+        projectDescription: "A command line app that allows the user to add, update, and retrieve employee data from a MySQL database.",
+        picture: images.employeeTracker,
+        pictureAltText: "Employee Tracker",
+        githubLink: `https://github.com/gleeson-emily/employee-tracker`
+    },
+    {
+        id: 3,
+        projectTitle: "README Generator",
+        projectTech: "Node.js",
+        projectDescription: "A command line app that takes input from the user and generates a markdown file containing a README for a project. Built using Node.js module Inquirer.",
+        picture: images.readMeGen,
+        pictureAltText: "README Generator",
+        githubLink: "https://github.com/gleeson-emily/read-me-generator"
+    },
+    {
+        id: 4,
+        projectTitle: "Simple Day Planner",
+        projectTech: "HTML, CSS, and jQuery",
+        projectDescription: "A simple day planner app that allows users to enter information for each hour of the standard workday. The information is saved to local storage, and can be updated and deleted. Used jQuery to execute the logic and Bootstrap for CSS styling.",
+        picture: images.dayPlanner,
+        pictureAltText: "Simple Day Planner",
+        githubLink: "https://github.com/gleeson-emily/simple-day-planner",
+        deployedLink: "https://gleeson-emily.github.io/simple-day-planner/"
+    },
+    {
+        id: 5,
+        projectTitle: "Project Mayhem eSports Dashboard",
+        projectTech: "HTML, CSS, JavaScript, and Server-Side APIs",
+        projectDescription: "An eSports app that uses API calls to fetch information about eSports tournaments and teams. Built using Twitch and PandaScore APIs, and Bulma CSS framework for the styling. A group project - my contribution included pulling data from PandaScore's API and styling using Bulma.",
+        picture: images.eSportsDash,
+        pictureAltText: "Project Mayhem eSports Dashboard",
+        githubLink: "https://github.com/Staycold/EsportsDashboard",
+        deployedLink: "https://staycold.github.io/EsportsDashboard/"
+    }
+    
+]
+
+export default projects;

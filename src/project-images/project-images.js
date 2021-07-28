@@ -1,8 +1,8 @@
-import planTrip from './add-trip.png'
-import employeeTracker from './employee-tracker-screenshot.png'
-import eSportsDash from './esports-dashboard.png'
-import readMeGen from './read-me-generator-screenshot.png'
-import dayPlanner from './simple-day-planner.png'
+import planTrip from './addtrip.png'
+import employeeTracker from './employeetracker.png'
+import eSportsDash from './esportsdashboard.png'
+import readMeGen from './readmegenerator.png'
+import dayPlanner from './dayplanner.png'
 
 const images = {
     planTrip,
