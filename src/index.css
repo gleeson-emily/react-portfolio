@@ -1,7 +1,4 @@
 
-.header {
-  font-size: 36px;
-}
 
 /* page styles go here */
 
@@ -17,4 +14,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header {
+  font-size: 36px;
 }

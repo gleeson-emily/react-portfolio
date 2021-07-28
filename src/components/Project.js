@@ -1,30 +1,20 @@
 import React from 'react';
-import projects from '../utils/projects.js';
 
-
-
-console.log(projects)
-
-export default function Project({ projects }) {
-
-  console.log({projects})
-  console.log(projects[0].githubLink)
+export default function Project(props) {
     return (
-      projects.map((project) => (
-          <div className="projectContainer" key={project.id}>
-          <a href={project.githubLink} target="_blank">
-        <img
-        className="margins"
-        src={project.picture}
-        alt={project.pictureAltText}
-        />
-    </a>
-    <h4>{`${project.projectTitle}`}</h4>
-    <h5>{`${project.projectTech}`}</h5>
+<div class="card">
+  <div class="card-image">
+      <img alt={props.pictureAltText} src={props.image} />
+  </div>
+  <div class="card-content">
+    <h4>{`${props.projectTitle}`}</h4>
+    <h5>{`${props.projectTech}`}</h5>
     <p>
-    {`${project.projectDescription}`}
+    {`${props.projectDescription}`}
     </p>
+   <a href={props.githubLink} target="_blank">Github</a>
+  <a href={props.deployedLink} target="_blank">Deployed</a>
+   </div>
     </div>
-      ))
-      );
-    }
+    )
+}
