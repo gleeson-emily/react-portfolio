@@ -1,10 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 //this will be my contact info page with github/linkedin/resume info
 //plus contact form (that apparently doesn't need to actually send an email)
 //conditionally render when Contact tab in navbar clicked
 
 export default function Contact() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+
+const handleInputChange = (e) => {
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+    
+        if (inputType === 'name') {
+          setName(inputValue);
+        } else if (inputType === 'email') {
+          setEmail(inputValue);
+        } else {
+          setMessage(inputValue);
+        }
+      };
+    
+
+
+const handleFormSubmit = (e) => {
+        e.preventDefault();
+        alert(`Thank you for your message! I'll be in touch soon!`);
+        setName('');
+        setEmail('');
+        setMessage('');
+      };
+
+//this function clears info from the form when cancel button is pressed
+const cancelForm = (e) => {
+        e.preventDefault();
+        setName('');
+        setEmail('');
+        setMessage('');
+
+};
+
     return (
     <div className = "contact">
         
@@ -30,36 +68,35 @@ export default function Contact() {
   </ul>
     
    <h3>Contact Me: </h3> 
-  <div className="field">
+  <form className="field">
   <label className="label">Name</label>
   <div className="control">
-    <input className="input" type="text" placeholder="Your name here!" />
+    <input className="input" name="name" type="text" value={name} onChange={handleInputChange} placeholder="Your name here!" />
   </div>
-</div>
-
 <div className="field">
   <label className="label">Email Address</label>
   <div className="control">
-    <input className="input" type="email" placeholder="Your email here!" />
+    <input className="input" name="email" type="email" value={email} onChange={handleInputChange} placeholder="Your email here!" />
   </div>
 </div>
 
 <div className="field">
   <label className="label">Message</label>
   <div className="control">
-    <textarea className="textarea" placeholder="Message"></textarea>
+    <textarea className="textarea" name="message" value={message} onChange={handleInputChange} placeholder="Message"></textarea>
   </div>
 </div>
 
 <div className="field is-grouped">
   <div className="control">
-    <button className="button is-link">Submit</button>
+    <button className="button is-link" onClick={handleFormSubmit} >Submit</button>
   </div>
   <div className="control">
-    <button className="button is-link is-light">Cancel</button>
+    <button className="button is-link is-light" onClick={cancelForm}>Cancel</button>
   </div>
 </div>
 
+</form>
 </div>
 
     )
