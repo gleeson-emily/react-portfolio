@@ -8,37 +8,18 @@ import React from 'react';
 //may need to move/refactor navbar stuff to Navigation
 
 export default function Header() {
-return ( <header className="header">
-  <h1>Emily Gleeson - Web Developer Portfolio</h1>
-  <h2>Aspiring Web Developer</h2>
-  <nav>
-    <ul className="navbar shadow">
-      {/* <li>
-        <a href="#about-me">About Me</a>
-      </li>
-      <li>
-        <a href="#my-work">My Work</a>
-      </li> */}
-      <li>
-        <a href="https://github.com/gleeson-emily" target="_blank">
-          GitHub
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/emily-gleeson24" target="_blank">
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://drive.google.com/file/d/1GSTJWOTUc4nwybM1r9bnrPMPTJ5y4iHA/view?usp=sharing"
-          target="_blank"
-        >
-          Resume
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
+return ( 
+
+
+<section class="hero is-small header">
+  <div class="hero-body">
+    <h1 class="title">
+    Emily Gleeson - Web Developer Portfolio
+    </h1>
+    <h2 class="subtitle">
+    Aspiring Web Developer
+    </h2>
+  </div>
+</section>
 )
 }

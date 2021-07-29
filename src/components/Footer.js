@@ -5,8 +5,13 @@ import 'bulma/css/bulma.min.css'
 
 export default function Footer() {
     return (
-        <footer>
-        Thanks for visiting!! 💖
-        </footer>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+    Thanks for visiting!! 💖
+    </p>
+  </div>
+</footer>
+
     )
 }

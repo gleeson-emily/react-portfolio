@@ -1,3 +1,21 @@
+:root {
+  background-color: rgb(255, 211, 229);
+}
+
+.header {
+  background-image: url('./other-images/portfoliobackground.png');
+  background-size: cover;
+}
+
+.footer {
+  background-image: url('./other-images/portfoliobackground.png');
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -24,5 +42,8 @@
   color: white;
 }
 
-
+.headshot {
+  max-width: 600px;
+  max-height: 800px;
+}
 
