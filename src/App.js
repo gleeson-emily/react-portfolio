@@ -1,4 +1,3 @@
-import projects from './utils/projects';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -10,12 +9,6 @@ function App() {
     <div>
       <Header />
        <Navigation />
-      {/*<Project projects={projects}  />
-      <Project projects={projects}/>
-      <Project projects={projects}/>
-      <Project projects={projects}/>
-      <Project projects={projects}/> */}
-
       <Footer />
     </div>
   );

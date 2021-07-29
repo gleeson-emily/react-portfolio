@@ -45,29 +45,39 @@ const cancelForm = (e) => {
 
     return (
     <div className = "contact">
-        
-    <ul>
-    <li>
-      <a href="https://github.com/gleeson-emily" target="_blank">
+    <div className="card contact-card"> 
+    <div className="block">
+    <h3>Where to Find Me:</h3>
+    </div>
+  
+    <div className="card-footer">
+    <div className="card-footer-item">
+        <a href="https://github.com/gleeson-emily" target="_blank">
         GitHub
       </a>
-    </li>
-    <li>
+      </div>
+  
+      <div className="card-footer-item">
       <a href="https://www.linkedin.com/in/emily-gleeson24" target="_blank">
         LinkedIn
       </a>
-    </li>
-    <li>
+      </div>
+   <div className="card-footer-item">
       <a
         href="https://drive.google.com/file/d/1GSTJWOTUc4nwybM1r9bnrPMPTJ5y4iHA/view?usp=sharing"
         target="_blank"
       >
         Resume
       </a>
-    </li>
-  </ul>
+    </div>
+    <div className="card-footer-item">
+      <a href="https://stackoverflow.com/users/15508690/emilyg">Stack Overflow</a>
+    </div>
+  </div>
+  </div>  
     
-   <h3>Contact Me: </h3> 
+   <div className="contactForm">
+   <h3>Send Me a Message:</h3> 
   <form className="field">
   <label className="label">Name</label>
   <div className="control">
@@ -89,14 +99,15 @@ const cancelForm = (e) => {
 
 <div className="field is-grouped">
   <div className="control">
-    <button className="button is-link" onClick={handleFormSubmit} >Submit</button>
+    <button className="button is-light" onClick={handleFormSubmit} >Submit</button>
   </div>
   <div className="control">
-    <button className="button is-link is-light" onClick={cancelForm}>Cancel</button>
+    <button className="button is-light" onClick={cancelForm}>Cancel</button>
   </div>
 </div>
-
 </form>
+</div> 
+
 </div>
 
     )

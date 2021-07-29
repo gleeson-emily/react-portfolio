@@ -1,17 +1,18 @@
 import React from 'react'
-import 'bulma/css/bulma.min.css'
 
 //component with footer from my site
 
 export default function Footer() {
     return (
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-    Thanks for visiting!! 💖
-    </p>
-  </div>
-</footer>
-
+<div className="footer">
+    <p>Thanks for visiting!! 💖</p>
+<a href="https://www.linkedin.com/in/emily-gleeson24" target="_blank">
+        LinkedIn
+      </a>
+    <a href="https://github.com/gleeson-emily" target="_blank">
+        GitHub
+      </a>
+<a href="https://stackoverflow.com/users/15508690/emilyg">Stack Overflow</a>
+</div>
     )
 }
