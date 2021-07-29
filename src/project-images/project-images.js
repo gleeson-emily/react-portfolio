@@ -1,15 +1,17 @@
 import planTrip from './addtrip.png'
-import employeeTracker from './employeetracker.png'
+import budgetTracker from './budget-app-screenshot.png'
 import eSportsDash from './esportsdashboard.png'
-import readMeGen from './readmegenerator.png'
+import fitnessTracker from './fitness-tracker-dashboard.png'
 import dayPlanner from './dayplanner.png'
+import bookSearch from './booksearch.png'
 
 const images = {
     planTrip,
-    employeeTracker,
+    budgetTracker,
     eSportsDash,
-    readMeGen,
-    dayPlanner
+    fitnessTracker,
+    dayPlanner,
+    bookSearch
 }
 
 

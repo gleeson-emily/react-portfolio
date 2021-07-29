@@ -13,21 +13,23 @@ const projects = [
     },
     {   
         id: 2,
-        projectTitle: "Employee Tracker App",
-        projectTech: "Node.js and MySQL",
-        projectDescription: "A command line app that allows the user to add, update, and retrieve employee data from a MySQL database.",
-        picture: images.employeeTracker,
-        pictureAltText: "Employee Tracker",
-        githubLink: `https://github.com/gleeson-emily/employee-tracker`
+        projectTitle: "Progressive Budget App",
+        projectTech: "Progressive Web Application and MongoDB",
+        projectDescription: "A budgeting app that allows users to enter transactions regardless of if they have access to the internet.",
+        picture: images.budgetTracker,
+        pictureAltText: "Progressive Budget App",
+        githubLink: `https://github.com/gleeson-emily/progressive-budget-app`,
+        deployedLink: `https://sleepy-everglades-32339.herokuapp.com/`
     },
     {
         id: 3,
-        projectTitle: "README Generator",
-        projectTech: "Node.js",
-        projectDescription: "A command line app that takes input from the user and generates a markdown file containing a README for a project. Built using Node.js module Inquirer.",
-        picture: images.readMeGen,
-        pictureAltText: "README Generator",
-        githubLink: "https://github.com/gleeson-emily/read-me-generator"
+        projectTitle: "Fitness Tracker",
+        projectTech: "MongoDB and JavaScript",
+        projectDescription: "A fitness tracker that uses a MongoDB database to save information about users' workouts.",
+        picture: images.fitnessTracker,
+        pictureAltText: "Fitness Tracker",
+        githubLink: "https://github.com/gleeson-emily/fitness-tracker",
+        deployedLink: " https://pacific-lowlands-33435.herokuapp.com/"
     },
     {
         id: 4,
@@ -48,6 +50,16 @@ const projects = [
         pictureAltText: "Project Mayhem eSports Dashboard",
         githubLink: "https://github.com/Staycold/EsportsDashboard",
         deployedLink: "https://staycold.github.io/EsportsDashboard/"
+    },
+    {
+    id: 6,
+    projectTitle: "Google Book Search App",
+    projectTech: "MERN",
+    projectDescription: "A code refactoring exercise in which the app's RESTful API was replaced with a GraphQL API built using Apollo Server. Allows users to sign up, search for books using the Google Books API search engine, and save books to their personal account.",
+    picture: images.bookSearch,
+    pictureAltText: "Google Book Search App",
+    githubLink: "https://github.com/gleeson-emily/book-search-app",
+    deployedLink: "https://peaceful-stream-07540.herokuapp.com/."
     }
     
 ]
